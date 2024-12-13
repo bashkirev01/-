@@ -4,12 +4,10 @@ import json
 
 
 def csv_to_json(csv_filename: str, json_filename: str, delimiter: str = ',', line_terminator: str = '\n'):
-    # Список для хранения результатов
     data = []
 
     # Чтение CSV файла
     with open(csv_filename, mode='r', encoding='utf-8') as csvfile:
-        # Используем DictReader для чтения CSV
         reader = csv.DictReader(csvfile, delimiter=delimiter, lineterminator=line_terminator)
 
         # Обходим строки CSV и добавляем их в список
@@ -28,7 +26,7 @@ def csv_to_json(csv_filename: str, json_filename: str, delimiter: str = ',', lin
 
 
 if __name__ == '__main__':
-    # Замените на ваши имена файлов для CSV и JSON
-    csv_filename = 'input.csv'  # Ваш CSV файл
-    json_filename = 'data.json'  # JSON файл для записи
+    csv_filename = 'input.csv'
+    json_filename = 'data.json'
     csv_to_json(csv_filename, json_filename)
+
