@@ -84,7 +84,6 @@ class Tree:
         >>> t.shed_leaves()
         'Дерево сбрасывает листья осенью.'
         """
-        return 'Дерево сбрасывает листья осенью.'
 
 class SocialNetwork:
 
